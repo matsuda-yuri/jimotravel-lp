@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* =========================
+   Legal document base styles
+   For: .legal-doc (terms / privacy)
+   ========================= */
+
+/* Optional: page background and container */
+.legal-doc {
+  /* layout */
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 100px 16px 24px;
+
+  /* typography */
+  line-height: 1.85;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #4D4D4D;
+
+  /* better wrapping for long japanese text */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .legal-doc {
+    padding: 130px 24px 40px;
+    font-size: 16.5px;
+  }
+}
+
+/* headings */
+.legal-doc__title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+.legal-doc__lead {
+  margin: 0;
+  color: #333;
+}
+
+.legal-doc h2 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  margin: 28px 0 12px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.legal-doc h3 {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 18px 0 8px;
+}
+
+.legal-doc h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 16px 0 8px;
+}
+
+/* sections / articles spacing */
+.legal-doc__header {
+  margin-bottom: 18px;
+}
+
+.legal-doc__section {
+  margin: 0 0 26px;
+}
+
+.legal-doc__article {
+  margin: 0 0 18px;
+}
+
+/* lists (make nested lists readable) */
+.legal-doc ul,
+.legal-doc ol {
+  margin: 10px 0;
+  padding-left: 1.25em;
+}
+
+.legal-doc li {
+  margin: 6px 0;
+}
+
+/* nested lists */
+.legal-doc li > ul,
+.legal-doc li > ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* bullet styles */
+.legal-doc ul {
+  list-style: disc;
+}
+.legal-doc ul ul {
+  list-style: circle;
+}
+.legal-doc ul ul ul {
+  list-style: square;
+}
+
+/* ordered list numbers not too cramped */
+.legal-doc ol {
+  list-style: decimal;
+}
+.legal-doc ol ol {
+  list-style: decimal;
+}
+
+/* notes / small print */
+.legal-doc__note {
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-left: 3px solid #d1d5db;
+  background: #f9fafb;
+  color: #374151;
+  font-size: 0.95em;
+}
+
+/* emphasis */
+.legal-doc strong {
+  font-weight: 700;
+}
+
+/* links */
+.legal-doc a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-doc a:hover {
+  opacity: 0.85;
+}
+
+/* footer */
+.legal-doc__footer {
+  margin-top: 32px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.legal-doc__footer p {
+  margin: 8px 0;
+}
+
+/* improve readability on very small screens */
+@media (max-width: 360px) {
+  .legal-doc {
+    font-size: 15px;
+    padding: 20px 14px;
+  }
+  .legal-doc__title {
+    font-size: 1.55rem;
+  }
+}
+
+/* Optional: anchor jump offset if you have fixed header */
+:root {
+  scroll-padding-top: 80px;
+}
