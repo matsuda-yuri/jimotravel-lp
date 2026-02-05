@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/assets//img/common/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <title>在地旅遊</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="在地旅遊">
+  <meta property="og:description" content="ページのディスクリプション">
+  <meta property="og:url" content="ページのURL">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="/img/common/og-img.jpg.webp">
+  <meta property="og:site_name" content="サイト名">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../../assets/css/lib/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+
+
+  <script src="../../assets/js/lib/b_browser_switcher.js"></script>
+</head>
+
+
+<body class="tw">
+  <div id="wrapper">
+
+    <header>
+      <div id="header" class="c-header">
+        <div class="inner-block">
+          <h1 class="logo">
+            <a href="/zh-TW/">
+              <img src="../../assets/img/common/logo-en.svg" alt="JimoTravel">
+            </a>
+          </h1>
+          <button type="button" class="btn-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <nav class="c-menu-wrap">
+            <div class="dropdown-container sp">
+              <div class="dropdown" id="dropdown">
+                <button class="dropdown-button" id="dropdownButton">
+                  <span id="selectedText">切換語言</span>
+                  <span class="dropdown-arrow"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="/ja-JP/contact/" class="dropdown-item" data-value="ja">日本語</a>
+                  <a href="/en-US/contact/" class="dropdown-item" data-value="en">English</a>
+                  <a href="/zh-TW/contact/" class="dropdown-item" data-value="tw">中文</a>
+                  <a href="/zh-CN/contact/" class="dropdown-item" data-value="cn">简体中文</a>
+                  <a href="/ko-KR/contact/" class="dropdown-item" data-value="ko">한국어</a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="c-menu">
+              <li><a href="/zh-TW/#link01">什麼是 Jimoto Travel？</a></li>
+              <li><a href="/zh-TW/#link02">能做什麼</a></li>
+              <li><a href="/zh-TW/#link03">旅遊日誌功能</a></li>
+              <li><a href="/zh-TW/#link04">使用情境</a></li>
+              <li><a href="/zh-TW/#link05">下載</a></li>
+              <li><a href="/zh-TW/#link06">店家專區</a></li>
+              <li><a href="/zh-TW/contact/">聯絡我們</a></li>
+            </ul>
+            <div class="dropdown-container pc">
+              <div class="dropdown" id="dropdown">
+                <button class="dropdown-button" id="dropdownButton">
+                  <span id="selectedText">切換語言</span>
+                  <span class="dropdown-arrow"></span>
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="/ja-JP/contact/" class="dropdown-item" data-value="ja">日本語</a>
+                  <a href="/en-US/contact/" class="dropdown-item" data-value="en">English</a>
+                  <a href="/zh-TW/contact/" class="dropdown-item" data-value="tw">中文</a>
+                  <a href="/zh-CN/contact/" class="dropdown-item" data-value="cn">简体中文</a>
+                  <a href="/ko-KR/contact/" class="dropdown-item" data-value="ko">한국어</a>
+                </div>
+              </div>
+            </div>
+
+          </nav>
+        </div><!-- /inner-block -->
+      </div><!-- /header -->
+    </header>
+
+    <main class="contact">
+      <div id="contact" class="contact-block outer-block bg-orange">
+        <div class="inner-block">
+          <h2 class="c-ttl01">聯絡我們</h2>
+
+          <div class="contact-input-area">
+            <form id="form" method="POST">
+              <table class="form-table">
+                <tr>
+                  <th>姓名<span class="ico-required">必填</span></th>
+                  <td class="validate-box">
+                    <input name="name" type="text" placeholder="請輸入您的姓名。" class="required">
+                    <div class="validate-text"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>電子信箱<span class="ico-required">必填</span></th>
+                  <td class="validate-box">
+                    <input name="email" type="text" placeholder="請輸入您的電子信箱。" class="required mail">
+                    <div class="validate-text"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>諮詢內容<span class="ico-required">必填</span></th>
+                  <td class="validate-box">
+                    <textarea name="content" placeholder="請輸入您的諮詢內容。" class="required"></textarea>
+                    <div class="validate-text"></div>
+                  </td>
+                </tr>
+              </table>
+              <div class="common-btn">
+                <button type="submit" name="submit" class="c-btn01">
+                  <p class="txt">前往確認頁面</p>
+                  <img src="../../assets/img/common/arrow01.svg" alt="" class="icon">
+                </button>
+              </div>
+            </form>
+          </div><!-- /contact-input-area -->
+
+          <div class="contact-confirm-area">
+            <p class="lead-txt">
+              請確認您的諮詢內容，確認無誤後請點選「送出」按鈕。<br>
+              如需修改內容，請點選「返回編輯」按鈕。
+            </p>
+            <table class="form-table">
+              <tr>
+                <th>姓名<span class="ico-required">必填</span></th>
+                <td><span class="confirm-name"></span></td>
+              </tr>
+              <tr>
+                <th>電子信箱<span class="ico-required">必填</span></th>
+                <td><span class="confirm-email"></span></td>
+              </tr>
+              <tr>
+                <th>諮詢內容<span class="ico-required">必填</span></th>
+                <td><span class="confirm-content"></span></td>
+              </tr>
+            </table>
+            <div class="common-btn">
+              <a href="/ja-JP/contact/" class="c-btn01 gray back">
+                <img src="../../assets/img/common/arrow01.svg" alt="" class="icon">
+                <p class="txt">返回編輯</p>
+              </a>
+              <button type="submit" name="submit" class="submit c-btn01">
+                <p class="txt">送出</p>
+                <img src="../../assets/img/common/arrow01.svg" alt="" class="icon">
+              </button>
+            </div>
+          </div><!-- /contact-confirm-area -->
+
+        </div><!-- /inner-block -->
+      </div><!-- /contact-block -->
+
+    </main>
+
+    <footer>
+      <div id="footer" class="c-footer">
+        <div id="pagetop"><a href="#wrapper"></a></div>
+        <div class="inner-block">
+          <!-- /inner-block -->
+          <div class="cont-wrap">
+            <div class="dropdown-container">
+              <div class="dropdown" id="dropdown">
+                <div class="dropdown-menu" id="dropdownMenu">
+                  <a href="/ja-JP/contact/" class="dropdown-item" data-value="ja">日本語</a>
+                  <a href="/en-US/contact/" class="dropdown-item" data-value="en">English</a>
+                  <a href="/zh-TW/contact/" class="dropdown-item" data-value="tw">中文</a>
+                  <a href="/zh-CN/contact/" class="dropdown-item" data-value="cn">简体中文</a>
+                  <a href="/ko-KR/contact/" class="dropdown-item" data-value="ko">한국어</a>
+                </div>
+
+                <button class="dropdown-button" id="dropdownButton">
+                  <span id="selectedText">切換語言</span>
+                  <span class="dropdown-arrow"></span>
+                </button>
+
+              </div>
+            </div>
+            <nav>
+              <ul class="nav-wrap">
+                <li><a href="/dummy/">使用條款</a></li>
+                <li><a href="/dummy/">隱私權政策</a></li>
+                <li><a href="https://bspr.co.jp/" target="_blank">營運公司</a></li>
+              </ul>
+            </nav>
+          </div>
+          <p class="copy-right">
+            Copyright © bspr Inc. All rights reserved.
+          </p>
+        </div> <!-- /inner-block -->
+      </div><!-- /header -->
+    </footer>
+
+
+  </div><!-- /wrapper -->
+
+  <script src="../../assets/js/lib/jquery-3.6.3.min.js"></script>
+  <script src="../../assets/js/lib/jquery.matchHeight.js"></script>
+  <script src="../../assets/js/lib/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/lib/form-validate.js"></script>
+  <script src="../../assets/js/lib/contact.js"></script>
+  <script src="../../assets/js/common.js"></script>
+</body>
+
+</html>
